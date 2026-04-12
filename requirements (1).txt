@@ -1,0 +1,16 @@
+openai>=1.55.0
+openai-agents>=0.0.6
+mcp>=1.0.0
+fastapi>=0.115.0
+uvicorn>=0.32.0
+flask>=3.0.0
+pydantic>=2.9.0
+httpx>=0.27.0
+python-dotenv>=1.0.0
+rich>=13.9.0
+yfinance>=0.2.48
+tavily-python>=0.5.0
+pdfplumber>=0.11.0
+pandas>=2.2.0
+pytest>=7.0.0
+pytest-asyncio>=0.21.0

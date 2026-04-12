@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AFDE — Register</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0A0A0F; color: #CBD5E1; font-family: 'SF Mono', 'Consolas', monospace;
+       display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.card { background: #111827; border: 1px solid #1E293B; border-radius: 10px;
+        padding: 36px 40px; width: 360px; }
+h1 { color: #E2E8F0; font-size: 18px; margin-bottom: 6px; }
+.sub { color: #374151; font-size: 11px; margin-bottom: 28px; }
+label { display: block; color: #475569; font-size: 11px; margin-bottom: 6px; }
+input { width: 100%; background: #0D0D14; border: 1px solid #2D3748; border-radius: 6px;
+        color: #E2E8F0; font-family: inherit; font-size: 13px; padding: 10px 14px;
+        margin-bottom: 16px; outline: none; }
+input:focus { border-color: #3B82F6; }
+button { width: 100%; background: #7C3AED; color: #fff; border: none; border-radius: 6px;
+         padding: 11px; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+button:hover { background: #6D28D9; }
+.link { text-align: center; margin-top: 16px; font-size: 11px; color: #374151; }
+.link a { color: #3B82F6; text-decoration: none; }
+.flash { background: #1A0808; border: 1px solid #7F1D1D; color: #FCA5A5;
+         border-radius: 4px; padding: 8px 12px; font-size: 11px; margin-bottom: 16px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div style="text-align:center;margin-bottom:14px">
+    <img src="/static/logoname.png" alt="AFDE Logo"
+         style="width:180px;border-radius:12px;opacity:.95">
+  </div>
+  <h1>Create account</h1>
+  <div class="sub">Your analyses, watchlist and alerts will be saved</div>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}<div class="flash">{{ messages[0] }}</div>{% endif %}
+  {% endwith %}
+  <form method="POST">
+    <label>Username</label>
+    <input type="text" name="username" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <label>Password</label>
+    <input type="password" name="password" required>
+    <button type="submit">Create account</button>
+  </form>
+  <div class="link">Already have an account? <a href="/login">Sign in</a></div>
+</div>
+</body>
+</html>

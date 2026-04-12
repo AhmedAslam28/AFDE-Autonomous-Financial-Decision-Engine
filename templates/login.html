@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AFDE — Login</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0A0A0F; color: #CBD5E1; font-family: 'SF Mono', 'Consolas', monospace;
+       display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.card { background: #111827; border: 1px solid #1E293B; border-radius: 10px;
+        padding: 36px 40px; width: 360px; }
+h1 { color: #E2E8F0; font-size: 18px; margin-bottom: 6px; }
+.sub { color: #374151; font-size: 11px; margin-bottom: 28px; }
+label { display: block; color: #475569; font-size: 11px; margin-bottom: 6px; }
+input { width: 100%; background: #0D0D14; border: 1px solid #2D3748; border-radius: 6px;
+        color: #E2E8F0; font-family: inherit; font-size: 13px; padding: 10px 14px;
+        margin-bottom: 16px; outline: none; }
+input:focus { border-color: #3B82F6; }
+button { width: 100%; background: #2563EB; color: #fff; border: none; border-radius: 6px;
+         padding: 11px; font-family: inherit; font-size: 13px; font-weight: 600;
+         cursor: pointer; margin-top: 4px; }
+button:hover { background: #1D4ED8; }
+.link { text-align: center; margin-top: 16px; font-size: 11px; color: #374151; }
+.link a { color: #3B82F6; text-decoration: none; }
+.flash { background: #1A0808; border: 1px solid #7F1D1D; color: #FCA5A5;
+         border-radius: 4px; padding: 8px 12px; font-size: 11px; margin-bottom: 16px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div style="text-align:center;margin-bottom:18px">
+    <img src="/static/logoname.png" alt="AFDE Logo"
+         style="width:220px;border-radius:12px;opacity:.95">
+  </div>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="flash">{{ messages[0] }}</div>
+    {% endif %}
+  {% endwith %}
+  <form method="POST">
+    <label>Username</label>
+    <input type="text" name="username" autocomplete="username" required>
+    <label>Password</label>
+    <input type="password" name="password" autocomplete="current-password" required>
+    <button type="submit">Sign in</button>
+  </form>
+  <div class="link">No account? <a href="/register">Register</a> · <a href="/">Continue as guest</a></div>
+</div>
+</body>
+</html>
