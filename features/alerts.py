@@ -17,7 +17,7 @@ import os
 import sqlite3
 from datetime import datetime
 
-DB_PATH = os.getenv("AFDE_DB", "history.db")
+DB_PATH = os.getenv("AFDE_DB", "/tmp/history.db")
 
 
 def _init_alerts_table(conn: sqlite3.Connection) -> None:
