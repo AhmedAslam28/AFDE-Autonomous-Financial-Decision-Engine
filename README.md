@@ -1,1 +1,1 @@
-AFDE - Autonoous Financial Decision Engine
+AFDE - Autonomous Financial Decision Engine
