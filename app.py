@@ -34,6 +34,8 @@ from features.email_notifications import (
 from features.pdf_export    import generate_pdf
 from features.plain_english import simplify_analysis
 from features.ticker_search import search_tickers, get_ticker_info
+import yfinance as yf
+yf.set_tz_cache_location("/tmp")
 
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET_KEY", "afde-change-in-prod")
