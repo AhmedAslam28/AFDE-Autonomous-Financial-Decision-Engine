@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=False)
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 if not OPENAI_API_KEY:
