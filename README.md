@@ -10,7 +10,6 @@
 ![Flask](https://img.shields.io/badge/Flask-3.0-111827?style=flat-square&logo=flask&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI_Agents_SDK-0.13-10B981?style=flat-square&logo=openai&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-8B5CF6?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-F59E0B?style=flat-square)
 
 </div>
 
