@@ -4,7 +4,7 @@ import os, sqlite3, asyncio
 from datetime import datetime, timedelta
 
 _APP_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH  = os.getenv("AFDE_DB", os.path.join(_APP_DIR, "history.db"))
+DB_PATH = os.getenv("AFDE_DB", "/tmp/history.db")
 
 def _init(conn):
     conn.execute("""CREATE TABLE IF NOT EXISTS decision_outcomes (
