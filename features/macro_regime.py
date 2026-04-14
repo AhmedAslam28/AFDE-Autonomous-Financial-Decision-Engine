@@ -28,7 +28,7 @@ import sqlite3
 from datetime import datetime
 from enum import Enum
 
-DB_PATH = os.getenv("AFDE_DB", "history.db")
+DB_PATH = os.getenv("AFDE_DB", "/tmp/history.db")
 
 
 class MacroRegime(str, Enum):
