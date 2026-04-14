@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 
 _APP_DIR  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH   = os.getenv("AFDE_DB", os.path.join(_APP_DIR, "history.db"))
+DB_PATH = os.getenv("AFDE_DB", "/tmp/history.db")
 SMTP_HOST = os.getenv("SMTP_HOST","smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT","587"))
 SMTP_USER = os.getenv("SMTP_USER","")
