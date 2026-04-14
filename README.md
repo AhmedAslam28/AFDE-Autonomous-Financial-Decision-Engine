@@ -226,21 +226,6 @@ afde/
 
 ---
 
-## Deployment
-
-AFDE is built for Railway deployment with automatic PostgreSQL detection:
-
-```bash
-# Local
-python app.py
-
-# Production (Railway detects Procfile automatically)
-# Procfile: web: gunicorn app:app --workers 2 --timeout 120 --bind 0.0.0.0:$PORT
-```
-
-When `DATABASE_URL` is present in environment (set automatically by Railway PostgreSQL), the app switches from SQLite to PostgreSQL. When absent, SQLite is used locally with no configuration required.
-
----
 
 ## Environment Variables
 
