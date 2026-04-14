@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="static/logo_full.jpg" alt="AFDE Logo" width="280" style="border-radius:12px"/>
+<img src="static/logoname.png" alt="AFDE Logo" width="280" style="border-radius:12px"/>
 
 # AFDE — Autonomous Financial Decision Engine
 
