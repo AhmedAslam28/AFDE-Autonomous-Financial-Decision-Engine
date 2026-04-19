@@ -23,6 +23,8 @@ It is not a chatbot wrapper around a financial dataset. It is a genuine autonomo
 
 ---
 
+<img src="Architecure Diagram.png" alt="AFDE arch" width="280" style="border-radius:12px"/>
+
 ## Core Architecture
 
 ### The Four-Agent Pipeline
