@@ -14,7 +14,6 @@
 </div>
 
 ---
-Built by **Ahmed Aslam**
 
 ▶️ **Watch Full Demo Vexigent v1**
 
